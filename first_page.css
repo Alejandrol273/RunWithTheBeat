@@ -42,6 +42,37 @@ form {
     background-color: white;
     cursor: pointer;
 }
+#distance{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+#pace{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+#time{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+#time option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
 
 .fancy {
     background-color: rgba(255, 255, 255, 0.8);
