@@ -18,15 +18,24 @@ h1 {
 /* Rectangle 1: The Subtitle/Banner Box */
 .banner-rectangle {
     width: 60%;
+    height: 215px;
     margin: 0 auto 20px auto; /* Centers the rectangle and adds space below */
     background-color:  rgb(255, 239, 196);
 ; /* Theme color */
     color: white;
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
+    text-align:start;
     border-radius: 12px;
     font-size: 22px;
     font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.straight-rectangle{
+    width: 60%;
+    height: 15px;
+    color: rgb(55, 26, 2);
+    padding: 15px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -34,6 +43,7 @@ h1 {
 .fancy {
     width: 55%;
     margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(255, 239, 196);;
     background-size: cover;
     background-repeat: no-repeat; 
