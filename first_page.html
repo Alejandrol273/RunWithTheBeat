@@ -22,15 +22,27 @@
    
     <form action="/submit-data" method="POST">
   <!-- The label is critical for accessibility and user experience -->
-  <label for="genre-choice">Choose a Music Genre:</label>
+  <label for="genre-choice">Choose a music Genre:</label>
   
   <!-- The select tag wraps your choices -->
   <select id="genres" name="selected_car">
-    <option value="Hip Hop/Rap"> </option> disabled selected>Select an option...</option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="mercedes">Mercedes</option>
-    <option value="audi">Audi</option>
+    <option value="" disabled selected>Select an option...</option>
+    <option value="Hip Hop/Rap">Hip Hop/Rap</option>
+    <option value="Pop">Pop</option>
+    <option value="Latin Music">Latin Music</option>
+    <option value="Rock/Alternative">Rock/Alternative</option>
+    <option value = "R&B/Soul">R&B/Soul</option>
+    <option value = "ED/Dance">ED/Dance</option>
+    <option value = "Country">Country</option>
+    <option value = "Afrobeats">Afrobeats</option>
+    <option value = "K-Pop">K-Pop</option>
+    <option value = "Trap">Trap</option>
+    <option value = "Indie Pop/Alternative">Indie Pop/Alternative</option>
+    <option value = "Phonk/Drift Phonk">Phonk/Drift Phonk</option>
+    <option value = "Folk & Acoustive">Folk & Acoustive</option>
+    <option value = "Classical">Classical</option>
+    <option value = "Jazz">Jazz</option>
+
   </select>
 
   <button type="submit">Submit</button>
