@@ -1,6 +1,6 @@
 // store the selected genre in local storage
 const dropdown = document.getElementById("genres");
-const button = document.getElementById("submit-button");
+const button = document.getElementById("submit");
 let storedValue = ""; // Variable to hold the value
 
 button.addEventListener("click", () => {
