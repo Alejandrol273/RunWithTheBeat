@@ -13,16 +13,60 @@ h1 {
     font-size: 100px;
 }
 
-form{
-    font-size: 50px;
+form {
+    font-size: 30px; /* Reduced slightly so it fits nicely inside the container */
+}
+
+/* Style the Dropdown (Select Box) */
+#genres {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Style the Options inside the Dropdown */
+#genres option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+#height{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
 }
 
 .fancy {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     margin: 50px;
-    font-size: 50px;
+    font-size: 30px; /* Adjusted to balance readability with your layout */
     text-align: center;
     border-radius: 12px;
-    font-style: oblique; /* Fixed shorthand syntax error */
+    font-style: oblique;
+}
+
+/* Style and scale up the submit button */
+form button[type="submit"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;       /* Makes the text inside bigger */
+    padding: 12px 28px;    /* Adds space around the text to make the button bigger */
+    border-radius: 8px;    /* Rounds the corners slightly */
+    background-color: rgb(255, 127, 80); /* Optional: gives it a nice theme color */
+    color: white;          /* Makes the text white */
+    border: none;          /* Removes the default browser border */
+    cursor: pointer;       /* Changes mouse cursor to a pointer on hover */
+    margin-left: 10px;     /* Adds a little space if it's right next to the dropdown */
+}
+
+/* Optional: Add a hover effect so it reacts when the user mouses over it */
+form button[type="submit"]:hover {
+    background-color: rgb(230, 100, 50);
 }

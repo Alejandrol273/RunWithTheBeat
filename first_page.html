@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Add the Google Font link here -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="first_page.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,56 +16,59 @@
     <h1>Run With The Beat!</h1>
    
     <div class="fancy">
-    <p title="About Run With The Beat">Let us make your new running playlist!</p>
-    <img src="Images/run.avif" alt="Nature" width="200" height="180">
-   
-    <form action="/submit-data" method="POST">
-  <!-- The label is critical for accessibility and user experience -->
-  <label for="genre-choice">Choose a music Genre:</label>
-  
-  <!-- The select tag wraps your choices -->
-  <select id="genres" name="selected_car">
-    <option value="" disabled selected>Select an option...</option>
-    <option value="Hip Hop/Rap">Hip Hop/Rap</option>
-    <option value="Pop">Pop</option>
-    <option value="Latin Music">Latin Music</option>
-    <option value="Rock/Alternative">Rock/Alternative</option>
-    <option value = "R&B/Soul">R&B/Soul</option>
-    <option value = "ED/Dance">ED/Dance</option>
-    <option value = "Country">Country</option>
-    <option value = "Afrobeats">Afrobeats</option>
-    <option value = "K-Pop">K-Pop</option>
-    <option value = "Trap">Trap</option>
-    <option value = "Indie Pop/Alternative">Indie Pop/Alternative</option>
-    <option value = "Phonk/Drift Phonk">Phonk/Drift Phonk</option>
-    <option value = "Folk & Acoustive">Folk & Acoustive</option>
-    <option value = "Classical">Classical</option>
-    <option value = "Jazz">Jazz</option>
+        <p title="About Run With The Beat">Let us make your new running playlist!</p>
+        <img src="Images/run.avif" alt="Nature" width="200" height="180">
+       
+        <form action="/submit-data" method="POST">
+            
+            <!-- The select tag wraps your choices -->
+            <select id="genres" name="selected_genre">
+                <option value="" disabled selected>Choose a music Genre...</option>
+                <option value="Hip Hop/Rap">Hip Hop/Rap</option>
+                <option value="Pop">Pop</option>
+                <option value="Latin Music">Latin Music</option>
+                <option value="Rock/Alternative">Rock/Alternative</option>
+                <option value="R&B/Soul">R&B/Soul</option>
+                <option value="ED/Dance">ED/Dance</option>
+                <option value="Country">Country</option>
+                <option value="Afrobeats">Afrobeats</option>
+                <option value="K-Pop">K-Pop</option>
+                <option value="Trap">Trap</option>
+                <option value="Indie Pop/Alternative">Indie Pop/Alternative</option>
+                <option value="Phonk/Drift Phonk">Phonk/Drift Phonk</option>
+                <option value="Folk & Acoustic">Folk & Acoustic</option>
+                <option value="Classical">Classical</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+            <hr>
 
-  </select>
+            <label>Enter your height in cm:</label>
+            <hr>
+            <input type="text" id="height" name="height" placeholder="height">
+            <hr>
+            <button type="submit">Submit</button>
+        </form>
 
-  <button type="submit">Submit</button>
-</form>
-    <p style="background-color:tomato;">This is a paragraph.</p>
-    <hr>
-    
-    <p>This is a <br> paragraph with a line break.</p>
-    
-    <p>This is a paragraph.</p>
-    <p style="font-size:160%;">This is a paragraph BIG.</p>
-    <p style="text-align:center;">Centered paragraph.</p>
+        <p style="background-color:tomato;">This is a paragraph.</p>
+        <hr>
+        
+        <p>This is a <br> paragraph with a line break.</p>
+        
+        <p>This is a paragraph.</p>
+        <p style="font-size:160%;">This is a paragraph BIG.</p>
+        <p style="text-align:center;">Centered paragraph.</p>
 
-    <button onclick="alert('Hello!')">Click Me</button>
+        <button onclick="alert('Hello!')">Click Me</button>
 
-    <p style="color:red;">This is a red paragraph.</p>
+        <p style="color:red;">This is a red paragraph.</p>
 
-     <p>This is a temporary image for a drawing of a running person</p>
-    <img src="Images/beach.jpg" alt="Nature" width="200" height="300">
-    
-    <p>
-        <img src="Images/beach.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
-        The image will float to the right of the text.
-    </p>
-</div>
+        <p>This is a temporary image for a drawing of a running person</p>
+        <img src="Images/beach.jpg" alt="Nature" width="200" height="300">
+        
+        <p>
+            <img src="Images/beach.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.
+        </p>
+    </div>
 </body>
 </html>
