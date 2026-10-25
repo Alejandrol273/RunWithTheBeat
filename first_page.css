@@ -1,8 +1,5 @@
 body {
-    /* 1. Use forward slashes for web paths */
     background-image: url("Images/beach2.avif");
-    
-    /* 2. Added these properties to make the background cover the screen nicely */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,21 +9,16 @@ body {
 h1 {
     color: black;
     text-align: center;
-    /* Removed duplicate background image to keep it clean, or keep it if intentional */
+    font-family: 'Irish Grover', sans-serif; 
+    font-size: 100px;
 }
 
-
-
 .fancy {
-     background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     margin: 50px;
-
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
     border-radius: 12px;
-    font:oblique;
-    padding: 30px;
-    margin: 50px;
-    text-align: center;
+    font-style: oblique; /* Fixed shorthand syntax error */
 }

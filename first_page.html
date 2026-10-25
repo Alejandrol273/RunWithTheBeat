@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add the Google Font link here -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="first_page.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +15,30 @@
 <body>
 
     <h1>Run With The Beat!</h1>
+   
     <div class="fancy">
     <p title="About Run With The Beat">Let us make your new running playlist!</p>
+    <img src="Images/run.avif" alt="Nature" width="200" height="180">
+   
+    <form action="/submit-data" method="POST">
+  <!-- The label is critical for accessibility and user experience -->
+  <label for="genre-choice">Choose a Music Genre:</label>
+  
+  <!-- The select tag wraps your choices -->
+  <select id="genres" name="selected_car">
+    <option value="Hip Hop/Rap"> </option> disabled selected>Select an option...</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
     <p style="background-color:tomato;">This is a paragraph.</p>
     <hr>
     
-    
     <p>This is a <br> paragraph with a line break.</p>
-    
     
     <p>This is a paragraph.</p>
     <p style="font-size:160%;">This is a paragraph BIG.</p>
@@ -26,7 +48,6 @@
 
     <p style="color:red;">This is a red paragraph.</p>
 
-    <!-- Fixed backslashes to forward slashes and changed 'length' to 'height' -->
      <p>This is a temporary image for a drawing of a running person</p>
     <img src="Images/beach.jpg" alt="Nature" width="200" height="300">
     
