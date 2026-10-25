@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Generator</title>
+    <!-- Link your external CSS file here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <header>
+            <h1>Music Playlist Generator</h1>
+            <p>Turn your data into custom soundtracks instantly.</p>
+        </header>
+
+        <!-- Auth State: Visible at start -->
+        <div id="login-section" class="center-content">
+            <button id="login-button" class="btn-spotify">Log in with Spotify</button>
+        </div>
+
+        <!-- App State: Hidden until logged in -->
+        <div id="app-container" class="form-section" style="display: none;">
+            <div class="input-group">
+                <label for="user-input">Describe your vibe or enter your data:</label>
+                <input type="text" id="user-input" placeholder="e.g., Chill morning acoustic, Late night driving">
+            </div>
+            
+            <button id="generate-button" class="btn-primary">Create Playlist</button>
+            
+            <!-- Dynamic feedback placeholder -->
+            <div id="status-message" class="status-box"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
