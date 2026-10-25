@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="first_page.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +14,13 @@
 <body>
 
     <h1>Run With The Beat!</h1>
-   
+
     <div class="fancy">
         <p title="About Run With The Beat">Let us make your new running playlist!</p>
         <img src="Images/run.avif" alt="Nature" width="200" height="180">
-       
-        <form action="/submit-data" method="POST">
-            
+
+        <form id="runForm">
+
             <!-- The select tag wraps your choices -->
             <select id="genres" name="selected_genre">
                 <option value="" disabled selected>Choose a music Genre...</option>
@@ -52,13 +52,13 @@
             <hr>
             <label>Enter your pace (kilometers per hour)</label>
             <hr>
-            <input type ="text" id = "distance" name = "distance" placeholder="distance">
+            <input type="text" id="distance" name="distance" placeholder="distance">
             <hr>
-            <input type ="text" id = "pace" name = "pace" placeholder="pace">
+            <input type="text" id="pace" name="pace" placeholder="pace">
             <hr>
             <label>Select your desired run time (minutes)</label>
             <hr>
-             <select id="time" name="selected_time">
+            <select id="time" name="selected_time">
                 <option value="" disabled selected>Select a run time...</option>
                 <option value="15">15</option>
                 <option value="30">30</option>
@@ -71,7 +71,10 @@
             </select>
             <hr>
             <button type="submit">Submit</button>
+
         </form>
     </div>
+
+    <script src="first_page.js"></script>
 </body>
 </html>
