@@ -17,10 +17,11 @@
 
     <div class="fancy">
         <p title="About Run With The Beat">Let us make your new running playlist!</p>
-        <img src="Images\Logo.jpg" alt="Nature" width="200" height="180">
+        <img src="Images\Logo-removebg-preview.png" alt="Nature" width="250" height="250">
 
-        <form id="runForm">
-
+        <form id="runForm" action="/submit-run" method="POST">
+    <!-- your inputs, dropdowns, and submit button -->
+    
             <!-- The select tag wraps your choices -->
             <select id="genres" name="selected_genre">
                 <option value="" disabled selected>Choose a music Genre...</option>
@@ -70,8 +71,7 @@
                 <option value="120">120</option>
             </select>
             <hr>
-            <button type="submit">Submit</button>
-
+             <button type="submit">Create Playlist & Login Spotify</button>
         </form>
     </div>
 

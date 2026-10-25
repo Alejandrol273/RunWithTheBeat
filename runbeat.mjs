@@ -3,9 +3,13 @@ import http from "node:http";
 import crypto from "node:crypto";
 
 const CLIENT_ID = process.env.CLIENT_ID;
-const GENRE = process.argv[2] || "house";
-const TARGET_BPM = Number(process.argv[3] || 128);
-const TOLERANCE = 6;        // accept BPM within ±6
+
+// These will be read from your command line arguments when you run the script:
+// e.g., node playlist.mjs "Pop" 165
+const GENRE = process.argv[2] || "Pop";
+const TARGET_BPS = Number(process.argv[3] || 160);
+
+const TOLERANCE = 6;        // accept BPM within ±6 (matches your formula's ±6 SPM)
 const WANTED = 30;          // playlist size to aim for
 const MAX_PAGES = 20;       // search pages (10 tracks each)
 
@@ -14,7 +18,7 @@ const REDIRECT = `http://127.0.0.1:${PORT}/callback`;
 const SCOPES = "playlist-modify-private playlist-modify-public";
 
 if (!CLIENT_ID) {
-  console.error("Set CLIENT_ID first (see setup above).");
+  console.error("Set CLIENT_ID first.");
   process.exit(1);
 }
 
